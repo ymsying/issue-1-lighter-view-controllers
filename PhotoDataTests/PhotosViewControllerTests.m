@@ -33,7 +33,7 @@
     
     // Trigger view did load:
     UIView *view = photosViewController.view;
-    STAssertNotNil(view, @"");
+    XCTAssertNotNil(view, @"");
     // Simulate a tap on the row:
     [photosViewController tableView:photosViewController.tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
 }
